@@ -1,5 +1,5 @@
 ---
-title: "4 reasons to start a blog"
+title: "4 Reasons to Start a Blog"
 excerpt: "Blogging is a nice side project and a hobby to have. It's easier than ever to start a blog, and you don't even have to invest any money to get started."
 date: "2024-05-05T14:20:00"
 author:
