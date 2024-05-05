@@ -23,15 +23,18 @@ export default async function Post({ params }: Params) {
       <Alert preview={post.preview} />
       <Container>
         <Header />
-        <article className="mb-32">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
-          <PostBody content={content} />
-        </article>
+        <div className='flex flex-col items-center'>
+          <article className="max-w-[700px] mb-32">
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              author={post.author}
+            />
+            <PostBody content={content} />
+          </article>
+        </div>
+        
       </Container>
     </main>
   );

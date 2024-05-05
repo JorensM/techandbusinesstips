@@ -1,6 +1,11 @@
-import Container from "@/app/_components/container";
-import { EXAMPLE_PATH } from "@/lib/constants";
+// Core
 import cn from "classnames";
+
+// Components
+import Container from "@/app/_components/container";
+
+// Constants
+import { GITHUB_URL } from '@/constants/URLS';
 
 type Props = {
   preview?: boolean;
@@ -31,7 +36,7 @@ const Alert = ({ preview }: Props) => {
             <>
               The source code for this blog is{" "}
               <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+                href={GITHUB_URL}
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
                 available on GitHub

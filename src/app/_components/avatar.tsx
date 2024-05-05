@@ -1,15 +1,16 @@
+// Constants
+import { nbsp } from '@/constants/HTML_ENTITIES';
+
 type Props = {
   name: string;
   picture: string;
 };
 
-const nbsp = "\u00A0";
-
 const Avatar = ({ name, picture }: Props) => {
   return (
-    <div className="flex items-center">
-      by{nbsp}<div className="font-bold">{name}</div>
-    </div>
+    <span>
+      by{nbsp}<span className="font-bold">{name}</span>
+    </span>
   );
 };
 

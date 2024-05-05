@@ -5,7 +5,6 @@ date: "2024-05-04T17:00:00"
 author:
   name: Jorens M
 ---
-# Multi-factor authentication
 Security is a major part of business and web development. All companies try to maximize their security in various ways, and one of those ways is multi-factor authentication.
 
 In this article I will tell you all you need to know about multi-factor authentication, both from the perspective of a developer and a bussines person.

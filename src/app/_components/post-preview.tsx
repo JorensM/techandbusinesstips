@@ -1,5 +1,11 @@
-import { type Author } from "@/interfaces/author";
+// Core
 import Link from "next/link";
+import clsx from 'clsx';
+
+// Types
+import { type Author } from "@/interfaces/author";
+
+// Components
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
@@ -11,6 +17,7 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  border?: boolean;
 };
 
 export function PostPreview({
@@ -20,9 +27,15 @@ export function PostPreview({
   excerpt,
   author,
   slug,
+  border = true
 }: Props) {
   return (
-    <div>
+    <div
+      className={clsx(
+        'p-4',
+        border && 'border border-solid border-gray-200 rounded-md'
+      )}
+    >
       {coverImage && 
         <div className="mb-5">
           <CoverImage slug={slug} title={title} src={coverImage} />
@@ -34,7 +47,7 @@ export function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-md mb-4">
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
