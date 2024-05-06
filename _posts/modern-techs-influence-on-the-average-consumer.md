@@ -1,7 +1,7 @@
 ---
 title: "Tech giants' influence on the average consumer"
-excerpt: "Multi-factor authentication, or MFA, is a form of authentication where, in order to authenticate, the user must go through several steps of authentication instead of only a single step."
-date: "2024-05-04T17:00:00"
+excerpt: "In this article we will explore the good and the bad effects that the corporate tech giants have had on our day-to-day lives."
+date: "2024-05-06T09:50:00"
 author:
   name: Jorens M
 ---
