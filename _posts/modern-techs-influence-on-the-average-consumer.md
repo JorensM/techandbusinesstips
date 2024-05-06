@@ -1,5 +1,5 @@
 ---
-title: "Tech giants' influence on the average consumer"
+title: "Modern tech's influence on the average consumer"
 excerpt: "In this article we will explore the good and the bad effects that the corporate tech giants have had on our day-to-day lives."
 date: "2024-05-06T09:50:00"
 author:
