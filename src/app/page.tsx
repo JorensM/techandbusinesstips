@@ -16,7 +16,7 @@ export default function Index() {
     <>
       <Container>
         <Intro />
-        <main className='flex flex-col items-center'>
+        <main className='flex flex-col items-center pb-8'>
           <div className='max-w-[700px]'>
             <PostsList
               posts={allPosts}
