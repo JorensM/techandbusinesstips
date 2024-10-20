@@ -22,7 +22,7 @@ In this article, we will go through some ways how you, as a developer, can work
 and write code in such a way that it benefits the user and is user-focused.
 
 If you don't know how to code, but would like to learn, feel free to check out
-[https://www.mergesociety.com/](https://www.mergesociety.com/), which is a great resource
+[mergesociety.com](https://www.mergesociety.com/), which is a great resource
 to get acquainted with the basics of coding.
 
 So without further ado, let's start.
