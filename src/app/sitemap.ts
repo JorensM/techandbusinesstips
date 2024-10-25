@@ -13,7 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: websiteURL
         },
         ...posts.map(post => ({
-            url: postsURL + post.slug
+            url: postsURL + post.slug,
+            lastModified: post.date.split('T')[0];
         }))
     ]
 }
