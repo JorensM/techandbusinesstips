@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         ...posts.map(post => ({
             url: postsURL + post.slug,
-            lastModified: post.date.split('T')[0];
+            lastModified: post.date.split('T')[0]
         }))
     ]
 }
