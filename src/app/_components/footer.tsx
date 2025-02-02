@@ -9,8 +9,6 @@ import Container from "@/app/_components/container";
 import { GITHUB_URL } from '@/constants/URLS';
 import { useState } from 'react';
 
-const MAILERLITE_API_KEY = process.env.NEXT_PUBLIC_MAILERLITE_API_KEY;
-
 export function Footer() {
 
   const [email, setEmail] = useState("");
@@ -19,20 +17,16 @@ export function Footer() {
 
   const handleSubscribeClick = async () => {
     setSubscribing(true);
-    const res = await fetch('https://connect.mailerlite.com/api/subscribers', {
+    const res = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': 'Bearer ' + MAILERLITE_API_KEY
       },
       body: JSON.stringify({
-        'email': email,
-        'groups': [
-          '145255370899588419'
-        ]
+        'email': email
       })
-    })
+    });
     if(res.status == 201) {
       setSubscribed(true);
       setSubscribing(false)
@@ -44,7 +38,6 @@ export function Footer() {
       <Container>
         <div className="py-4 flex flex-col lg:flex-row items-center justify-center max-w-[500px]">
           <div className='flex flex-col gap-2'>
-            {MAILERLITE_API_KEY ? 
             <>
                 <p className='font-semibold'>Subscribe to newsletter</p>
                 <p className='text-sm text-neutral-600'>
@@ -67,7 +60,6 @@ export function Footer() {
                 
                 : <p className='text-sm text-neutral-700'>Thank you for subscribing!</p>}
               </>
-            : null }
           </div>
         </div>
       </Container>
