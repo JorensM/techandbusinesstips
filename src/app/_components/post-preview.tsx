@@ -32,7 +32,7 @@ export function PostPreview({
   return (
     <div
       className={clsx(
-        'p-4 max-w-[700px]',
+        'p-4 w-full',
         border && 'border border-solid border-gray-400 rounded-md shadow-md'
       )}
     >
