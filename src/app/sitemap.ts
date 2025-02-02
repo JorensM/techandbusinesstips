@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const posts = getAllPosts();
     // Don't forget to include https://
-    const websiteURL = 'https://techandbusinesstips.com'
+    const websiteURL = 'https://www.techandbusinesstips.com'
     const postsURL = websiteURL + '/posts/';
 
     return [
