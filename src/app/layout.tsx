@@ -55,12 +55,13 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={inter.className}>
+        
         <Analytics />
         <div className="min-h-screen">{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

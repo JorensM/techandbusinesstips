@@ -8,7 +8,7 @@ type PostsListProps = {
 
 export default function PostsList({ posts }: PostsListProps) {
     return (
-        <div className='flex flex-col gap-2'>
+        <div className='flex gap-2 flex-wrap w-full justify-center'>
             {posts.map(post => 
                 <PostPreview
                     title={post.title}

@@ -32,8 +32,8 @@ export function PostPreview({
   return (
     <div
       className={clsx(
-        'p-4',
-        border && 'border border-solid border-gray-200 rounded-md'
+        'p-4 max-w-[700px]',
+        border && 'border border-solid border-gray-400 rounded-md shadow-md'
       )}
     >
       {coverImage && 

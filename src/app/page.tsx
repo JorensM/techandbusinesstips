@@ -17,7 +17,8 @@ export default function Index() {
       <Container>
         <Intro />
         <main className='flex flex-col items-center pb-8'>
-          <div className='max-w-[700px]'>
+          <div className='max-w-[1480px] w-full'>
+            <h2 className='text-lg font-medium my-4'>Featured</h2>
             <PostsList
               posts={allPosts}
             />

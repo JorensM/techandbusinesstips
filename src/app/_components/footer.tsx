@@ -1,30 +1,73 @@
+'use client'
+// Core
+import Helmet from 'react-helmet';
+
 // Components
 import Container from "@/app/_components/container";
 
 // Constants
 import { GITHUB_URL } from '@/constants/URLS';
+import { useState } from 'react';
+
+const MAILERLITE_API_KEY = process.env.NEXT_PUBLIC_MAILERLITE_API_KEY;
 
 export function Footer() {
+
+  const [email, setEmail] = useState("");
+  const [subscribing, setSubscribing] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribeClick = async () => {
+    setSubscribing(true);
+    const res = await fetch('https://connect.mailerlite.com/api/subscribers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + MAILERLITE_API_KEY
+      },
+      body: JSON.stringify({
+        'email': email,
+        'groups': [
+          '145255370899588419'
+        ]
+      })
+    })
+    if(res.status == 201) {
+      setSubscribed(true);
+      setSubscribing(false)
+    }
+  }
+
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="bg-neutral-50 border-t border-neutral-200 py-4">
       <Container>
-        <div className="py-4 flex flex-col lg:flex-row items-center justify-between">
-          <h3 className="text-xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center">
-            <a
-              href="https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={GITHUB_URL}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
+        <div className="py-4 flex flex-col lg:flex-row items-center justify-center max-w-[500px]">
+          <div className='flex flex-col gap-2'>
+            {MAILERLITE_API_KEY ? 
+            <>
+                <p className='font-semibold'>Subscribe to newsletter</p>
+                <p className='text-sm text-neutral-600'>
+                  You may unsubscribe at any time
+                </p>
+                <input 
+                  className='bg-neutral-100 border border-neutral-400 p-2 py-1 w-full text-sm' 
+                  type='email' 
+                  placeholder='Email'
+                  value={email}
+                  onChange={(e) => setEmail(e.currentTarget.value)}
+                />
+                {!subscribed ? 
+                  subscribing ? 
+                    <p>Subscribing...</p>
+                  :
+                  <button className='bg-black text-white p-2 rounded-md hover:bg-neutral-800 transition-all duration-150' onClick={handleSubscribeClick}>
+                    Subscribe
+                  </button>
+                
+                : <p className='text-sm text-neutral-700'>Thank you for subscribing!</p>}
+              </>
+            : null }
           </div>
         </div>
       </Container>
