@@ -9,7 +9,7 @@ author:
 ---
 
 If you want to bring traffic to your website or product, there are many
-opportunities that allow you to do this. They range from SEO to being
+opportunities that allow you to do this. They range from improving SEO to being
 active on social media to cold outreach, among many others.
 
 In this post we will be exploring several ways how one can leverage
@@ -34,7 +34,12 @@ and content in such a way that it is optimized for search engines.
 Search engines prefer different types and formats of content over other
 types and formats, and put the best ones higher in the results, which
 means that if your website is Search Engine Optimized, it will rank
-higher and show up higher in the search results of search engines.
+higher and show up higher in the search results of search engines such as Google.
+
+SEO plays an important role in attracting visitors to your websites and channels.
+It is also a method that is highly measurable and has a relatively direct, measurable
+cause/effect. When you improve your SEO, the results can often be directly mapped 
+to particular actions that you took to improve it.
 
 There are two important aspects to SEO - content and semantic and
 accessible HTML.
