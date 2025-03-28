@@ -1,0 +1,21 @@
+name: Gitnalytics commit event
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  make-api-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Make API Request
+        id: api-request
+        uses: muhfaris/request-action@v0.1.2
+        with:
+          url: ${{ secrets.API_URL }}
+          method: POST
