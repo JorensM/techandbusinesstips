@@ -3,7 +3,7 @@ title: "How to measure the impact of your product updates"
 excerpt: "Measuring the impact that the updates to your product cause is an important part
 of managing a business. It helps you see and understand what works, what doesn't,
 and why."
-date: "2025-04-27T10:00:00"
+date: "2025-05-09T10:00:00"
 author:
   name: Jorens M
 ---
@@ -38,9 +38,9 @@ statistic as well.
 Speaking of other variables, in order to be more certain that a particular update
 was in fact the cause of a change in statistics, you have to isolate the update
 from any other possible side-effect-causing variables, and make sure that there
-are as few of those as possible. For example if you changed a domain name and released
+are as few of those as possible. For example if you changed your brand and released
 a new feature on the same day, it will be harder to say whether the new visitor
-count increased due to the new feature or the change in the domain name.
+count changed due to the new feature or the change in the brand.
 
 For this reason it is a good idea to keep updates that you want to measure resonably
 far apart in terms of release dates, and try not to release them at the same time.
@@ -55,3 +55,46 @@ One great way to map your product updates to your stats is to use [Gitnalytics](
 It is a tool that allows you to look at your GitHub commit history and your Google Analytics
 stats on a single chart and easily compare them and see which commits might've
 affected your statistics.
+
+## Surveys
+
+Next up on the list is engaging with your users directly and making polls/surveys
+to ask your users directly how they are finding the new updates. It will help you
+understand how your users feel about a particular update and how it affects them.
+
+When using the surveys approach, it is all about asking the right questions and
+doing so in a non-intrusive way. Offer the user to take the survey and if they
+decline the first time, don't push it onto them. Add an option to disable survey
+notifications.
+
+The questions should be such that answer what you want to know (obviously). But
+besides that the questions should be worded in a clear and well defined manner so
+there is as little room for ambiguity as possible (unless ambiguity is what you're looking for).
+
+For example, you can ask your user 'Do you find this new feature useful?', and follow
+up with a 'Why?'. You can get more specific and ask questions such as 'Do you feel that
+this new feature improves the ROI of your work? If so, by how much?'. It all depends
+on what you want to know and what is your definition of impact.
+
+## Detailed tracking
+
+Another way to measure the impact is to collect more specific data about your
+user's behavior. Which areas are clicked most often, which pages are visited most
+often, which ones are bounced most often, which ones are visited least often.
+
+Collecting user data can give you insights into how introducing new updates changes
+their behavior and whether it improves the user experience.
+
+Personally I would not recommend this approach except in specific cases and in
+a very careful manner, as it can be quite invasive in terms of the user's privacy
+and if your terms of service are not clear, or if your tracking methods are no compliant
+with policies such as GDPR, it can get you in legal trouble too.
+
+In case you do decide to go with this approach, make sure that it is compliant
+with your regional data privacy policies and is completely anonymous.
+
+## Conclusion
+
+In this article we explored some ways we can measure the impact of our product updates.
+I hope you found this article useful and if you want to talk about anything or have
+any questions, feel free to reach out.
