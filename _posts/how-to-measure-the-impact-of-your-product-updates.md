@@ -51,7 +51,7 @@ that you can't release new updates often, but rather just the updates for which
 you wish to track impact. These would probably usually be major updates or feature
 releases, as opposed to small additions of bug fixes.
 
-One great way to map your product updates to your stats is to use [Gitnalytics](https://gitnalytics.vercel.app/).
+One great way to map your product updates to your stats is to use [Gitnalytics](https://gitnalytics.com).
 It is a tool that allows you to look at your GitHub commit history and your Google Analytics
 stats on a single chart and easily compare them and see which commits might've
 affected your statistics.
