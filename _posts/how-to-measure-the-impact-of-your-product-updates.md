@@ -8,6 +8,8 @@ author:
   name: Jorens M
 ---
 
+*This post is affiliated with [gitnalytics.com](https://gitnalytics.com)*
+
 Measuring the impact that the updates to your product cause is an important part
 of managing a business. It helps you see and understand what works, what doesn't,
 and why.
