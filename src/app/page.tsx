@@ -4,6 +4,7 @@ import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 import PostsList from './_components/posts-list';
+import import Head from 'next/head';
 
 export default function Index() {
   const allPosts = getAllPosts();
@@ -15,6 +16,9 @@ export default function Index() {
   return (
     <>
       <Container>
+        <Head>
+          <link rel="canonical" href="https://techandbusinesstips.com" />
+        </Head>
         <Intro />
         <main className='flex flex-col items-center pb-8'>
           <div className='max-w-[1200px] w-full'>
