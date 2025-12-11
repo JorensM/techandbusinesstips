@@ -17,6 +17,7 @@ export default function PostsList({ posts }: PostsListProps) {
                     date={post.date}
                     author={post.author}
                     slug={post.slug}
+                    membership={post.membership}
                 />
             )}
         </div>

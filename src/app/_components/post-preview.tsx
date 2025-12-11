@@ -18,6 +18,7 @@ type Props = {
   author: Author;
   slug: string;
   border?: boolean;
+  membership?: boolean;
 };
 
 export function PostPreview({
@@ -27,7 +28,8 @@ export function PostPreview({
   excerpt,
   author,
   slug,
-  border = true
+  border = true,
+  membership = false
 }: Props) {
   return (
     <div
@@ -41,7 +43,9 @@ export function PostPreview({
           <CoverImage slug={slug} title={title} src={coverImage} />
         </div>
       }
-      
+      <div className="underline">
+        {membership ? 'Members only' : ''}
+      </div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link href={`/posts/${slug}`} className="hover:underline text-black">
           {title}

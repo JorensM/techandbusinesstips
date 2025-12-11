@@ -6,6 +6,7 @@ and why."
 date: "2025-05-09T10:00:00"
 author:
   name: Jorens M
+membership: true
 ---
 
 *This post is affiliated with [gitnalytics.com](https://gitnalytics.com)*

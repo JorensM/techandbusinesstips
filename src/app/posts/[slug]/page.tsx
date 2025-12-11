@@ -7,6 +7,8 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import SubscribeForm from "@/app/_components/SubscribeForm";
+import Link from "next/link";
 
 export default async function Post({ params }: Params) {
   const post = getPostBySlug(params.slug);
@@ -16,6 +18,11 @@ export default async function Post({ params }: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
+
+  
+  const preview = await markdownToHtml(post.content.split('#')[0]);
+
+  // console.log(preview);
 
   return (
     <main>
@@ -30,7 +37,42 @@ export default async function Post({ params }: Params) {
               date={post.date}
               author={post.author}
             />
-            <PostBody content={content} />
+            <PostBody 
+              content={
+                post.membership ? preview : content
+              } 
+            />
+            {
+              post.membership ? 
+              <div className="text-lg flex flex-col items-center gap-8">
+                <div className="flex gap-4 mt-8">
+                  <div className="bg-neutral-700 rounded-full w-4 h-4">
+
+                  </div>
+                  <div className="bg-neutral-700 rounded-full w-4 h-4">
+
+                  </div>
+                  <div className="bg-neutral-700 rounded-full w-4 h-4">
+
+                  </div>
+                  <div className="bg-neutral-700 rounded-full w-4 h-4">
+
+                  </div>
+                </div>
+                <div className="text-lg font-bold text-neutral-900">
+                  The full article is available to members
+                </div>
+                <div className="flex flex-col gap-2 min-w-64 items-center border border-neutral-400 p-4 rounded-md">
+                  <Link href='https://buy.stripe.com/eVq7sN3uncg5dVYeke0gw00' className="text-center bg-black w-full px-12 py-2 text-white hover:bg-neutral-700 rounded-md">
+                    Join
+                  </Link>
+                  <div className="text-neutral-700 text-sm font-bold underline">
+                    4&euro;/month + VAT
+                  </div>
+                </div>
+              </div>
+              : null
+            }
           </article>
         </div>
         

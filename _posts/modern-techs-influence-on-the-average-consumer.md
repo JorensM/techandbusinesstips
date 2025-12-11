@@ -4,6 +4,7 @@ excerpt: "In this article we will explore the good and the bad effects that the 
 date: "2024-05-06T09:50:00"
 author:
   name: Jorens M
+membership: true
 ---
 
 I'm just your average Joe. I don't run a multi-million business and don't ride fancy cars. I'm also not a monk living in the mountains. Just a regular consumer, likely just like you. As an average consumer, I use a lot of different technologies - phone, computer, all the software that are on those devices. 
