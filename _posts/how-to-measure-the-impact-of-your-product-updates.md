@@ -8,8 +8,8 @@ author:
   name: Jorens M
 ---
 
-*This post is affiliated with [gitnalytics.com](https://gitnalytics.com)*, a tool
-that helps you understand which product updates leave impact.
+*This post is affiliated with [gitnalytics.com](https://gitnalytics.com), a tool
+that helps you understand which product updates leave impact.*
 
 Measuring the impact that the updates to your product cause is an important part
 of managing a business. It helps you see and understand what works, what doesn't,
