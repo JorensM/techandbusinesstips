@@ -1,12 +1,11 @@
 ---
-title: "How to measure the impact of your product updates"
+title: "How to measure the impact of your product updates on users and sales"
 excerpt: "Measuring the impact that the updates to your product cause is an important part
 of managing a business. It helps you see and understand what works, what doesn't,
 and why."
 date: "2025-05-09T10:00:00"
 author:
   name: Jorens M
-membership: true
 ---
 
 *This post is affiliated with [gitnalytics.com](https://gitnalytics.com)*
@@ -27,16 +26,25 @@ changed, removed or if the update should be reverted whatsoever.
 
 So, how *can* we measure the impact of our product updates?
 
-## Comparing your product updates to your visitor stats
+## Comparing your product updates to your visitor and revenue stats
 
 Probably the most intuitive and simple way to measure your impact is by comparing
-your product updates to changes in your statistics.
+your product updates to changes in your statistics, such as visits, interactions, revenue,
+bounce rates.
+
+One way to map your product updates to your stats is to use [Gitnalytics](https://gitnalytics.com).
+It is a tool that allows you to look at your GitHub commit history and your Google Analytics
+stats on a single chart and easily compare them and see which commits might've
+affected your statistics.
 
 For example, if your visitor engagement has been a steady horizontal line for the last
 month, and after pushing a new update you've noticed a sudden rise or fall in this
 statistic, it would be a pretty good guess to say that the update affected this statistic, 
 granted that there aren't any other variables at play that might've affected the
 statistic as well.
+
+Or if you've noticed a sudden change in sales/revenue, it could be possible to pinpoint
+this change to a particular push/update in your product or marketing strategy.
 
 Speaking of other variables, in order to be more certain that a particular update
 was in fact the cause of a change in statistics, you have to isolate the update
@@ -53,11 +61,6 @@ delivering new updates often, but keep in mind that this doesn't necessarily mea
 that you can't release new updates often, but rather just the updates for which
 you wish to track impact. These would probably usually be major updates or feature
 releases, as opposed to small additions of bug fixes.
-
-One great way to map your product updates to your stats is to use [Gitnalytics](https://gitnalytics.com).
-It is a tool that allows you to look at your GitHub commit history and your Google Analytics
-stats on a single chart and easily compare them and see which commits might've
-affected your statistics.
 
 ## Surveys
 
